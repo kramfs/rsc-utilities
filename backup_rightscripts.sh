@@ -1,6 +1,5 @@
 #!/bin/bash -e
 # Backup all rightscripts in the account
-# Rudel Saldivar
 ACCOUNT=
 SHARD=
 REFRESHTOKEN= 
