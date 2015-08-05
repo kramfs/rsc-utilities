@@ -28,3 +28,5 @@ do
 	echo "Saving script: $script_name"
 	/usr/local/bin/rsc --pp -a "$ACCOUNT" --email="$EMAIL" --pwd="$PASSWORD" -h "$SHARD" cm15 show_source $i > "$script_name"
 done
+
+echo "Script was saved in rightscripts_backup"
