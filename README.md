@@ -1,28 +1,32 @@
-<i>git clone https://github.com/kramfs/rsc-utilities.git
+RSC Utilities
+===================
 
-<b>Setup The Environment</b>
+Download/Backup all RightScripts from a RightScale account
 
-<i>cd rsc-utilities</i>
-<i>chmod +x setup_rsc.sh</i>
+Clone
+-------------
+`git clone https://github.com/kramfs/rsc-utilities.git`
 
-<i>sudo ./setup_rsc.sh
+Setup the environment
+-------------
+`cd rsc-utilities`
+`chmod +x setup_rsc.sh`
+`sudo ./setup_rsc.sh`
 
-<i>cd backup_rightscripts
+Backup Script
+-------------
+`cd backup_rightscripts`
+`chmod +x backup_rightscripts.sh`
 
-<i>chmod +x backup_rightscripts.sh
+Customize the required inputs
+-------------
+`vi backup_rightscripts.sh`
 
-<b>Customize the required inputs:</b>
+Edit the following, replace the values from the account and credentials that you want to backup
+> ACCOUNT=`1234`
+SHARD=`my.rightscale.com or us-4.rightscale.com `
+REFRESHTOKEN=`1234fgtejyrkutluiy`
+EMAIL=`user@domain.com`
+PWD=`RS_dashboard_password`
 
-<i>vi backup_rightscripts.sh
-
-<i>ACCOUNT=1234
-
-<i>SHARD=my.rightscale.com or us-4.rightscale.com 
-
-<i>REFRESHTOKEN=1234fgtejyrkutluiy
-
-<i>EMAIL=user@domain.com
-
-<i>PWD=RS_dashboard_password
-
-Either you user the email/password credential or use the refersh token. You need to adjust the script accordningly. It will use the email/password credential by default
+Either you user the email/password credential or use the refresh token. You need to adjust the script accordingly. It will use the email/password credential by default
