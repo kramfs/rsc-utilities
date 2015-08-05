@@ -6,7 +6,7 @@ sudo ./setup_rsc.sh
 
 then grab the script:
 wget https://github.com/kramfs/rsc-utilities/blob/master/backup_rightscripts/backup_rightscripts.sh
-chmod -x 
+chmod +x 
 
 Customize the required inputs:
 vi backup_rightscripts.sh
