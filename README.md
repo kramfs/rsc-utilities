@@ -39,6 +39,10 @@ Edit the following, replace the values from the account and credentials that you
 Either you use the email/password credential or the refresh token but not both. 
 You need to adjust the script accordingly. It will use the email/password credential by default
 
+Run the backup script
+-------------
+`./backup_rightscripts.sh`
+
 TODO
 -------------
 
