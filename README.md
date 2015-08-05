@@ -36,4 +36,5 @@ Edit the following, replace the values from the account and credentials that you
 
 > PASSWORD=`RS_dashboard_password`
 
-Either you user the email/password credential or use the refresh token. You need to adjust the script accordingly. It will use the email/password credential by default
+Either you use the email/password credential or the refresh token but not both. 
+You need to adjust the script accordingly. It will use the email/password credential by default
