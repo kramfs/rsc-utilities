@@ -25,5 +25,6 @@ cd rightscripts_backup
 for i in $source_href ;
 do
 	script_name=`/usr/local/bin/rsc --pp -a "$ACCOUNT" --email="$EMAIL" --pwd="$PASSWORD" -h "$SHARD" --x1=.name cm15 show $i`
+	echo "Saving script: $script_name"
 	/usr/local/bin/rsc --pp -a "$ACCOUNT" --email="$EMAIL" --pwd="$PASSWORD" -h "$SHARD" cm15 show_source $i > "$script_name"
 done
