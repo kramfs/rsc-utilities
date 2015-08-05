@@ -28,12 +28,12 @@ Customize the required inputs
 Edit the following, replace the values from the account and credentials that you want to backup
 > ACCOUNT=`1234`
 
-SHARD=`my.rightscale.com or us-4.rightscale.com `
+> SHARD=`my.rightscale.com or us-4.rightscale.com `
 
-REFRESHTOKEN=`1234fgtejyrkutluiy`
+> REFRESHTOKEN=`1234fgtejyrkutluiy`
 
-EMAIL=`user@domain.com`
+> EMAIL=`user@domain.com`
 
-PWD=`RS_dashboard_password`
+> PASSWORD=`RS_dashboard_password`
 
 Either you user the email/password credential or use the refresh token. You need to adjust the script accordingly. It will use the email/password credential by default
