@@ -1,6 +1,6 @@
 Setup The Environment
 
-wget https://github.com/kramfs/rsc-utilities/blob/master/setup_rsc.sh
+Grab the https://github.com/kramfs/rsc-utilities/blob/master/setup_rsc.sh
 
 chmod +x setup_rsc.sh
 
