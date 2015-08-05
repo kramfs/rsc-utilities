@@ -17,8 +17,8 @@ source_href=`/usr/local/bin/rsc --pp -a "$ACCOUNT" --email="$EMAIL" --pwd="$PASS
 ## Backup only specific rightscripts filter by "name 
 # source_href=`/usr/local/bin/rsc --pp -a "$ACCOUNT" -h "$SHARD" --pwd="$PASSWORD" -h "$SHARD" --xm=':has(.rel:val("source")) > .href' cm15 index /api/right_scripts filter[]="name==rjs:" |sed -e s/\"//g`
 
-mkdir -p rightscript_backup
-cd rightscript_backup
+mkdir -p rightscripts_backup
+cd rightscripts_backup
 for i in $source_href ;
 do
 	script_name=`/usr/local/bin/rsc --pp -a "$ACCOUNT" --email="$EMAIL" --pwd="$PASSWORD" -h "$SHARD" --x1=.name cm15 show $i`
