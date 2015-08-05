@@ -1,10 +1,9 @@
 <i>git clone https://github.com/kramfs/rsc-utilities.git
 
-<b>Setup The Environment
+<b>Setup The Environment</b>
 
-<i>cd rsc-utilities
-
-<i>chmod +x setup_rsc.sh
+<i>cd rsc-utilities</i>
+<i>chmod +x setup_rsc.sh</i>
 
 <i>sudo ./setup_rsc.sh
 
@@ -12,7 +11,7 @@
 
 <i>chmod +x backup_rightscripts.sh
 
-<b>Customize the required inputs:
+<b>Customize the required inputs:</b>
 
 <i>vi backup_rightscripts.sh
 
