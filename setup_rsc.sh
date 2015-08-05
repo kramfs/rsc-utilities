@@ -26,3 +26,4 @@ cp rsc /usr/local/bin
 echo "rsc binary location is `which rsc`"
 rsc --version
 echo "Done..."
+
