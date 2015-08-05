@@ -1,1 +1,8 @@
-Download the rsc binary and setup first by following this instruction: https://github.com/rightscale/rsc
+Download the and setup rsc binary the first:
+
+wget https://github.com/kramfs/rsc-utilities/blob/master/setup_rsc.sh
+
+sudo ./setup_rsc.sh
+
+
+source: https://github.com/rightscale/rsc
