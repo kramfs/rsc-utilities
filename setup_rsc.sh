@@ -11,6 +11,8 @@ OS=`uname`
 if [ ${OS} == 'Linux' ]; then
 	echo "Linux OS detected, downloading linux binary.."
 	echo ""
+	# uncomment to use master branch
+	#curl https://binaries.rightscale.com/rsbin/rsc/master/rsc-linux-amd64.tgz | tar -zxf - -O rsc/rsc > rsc
 	curl https://binaries.rightscale.com/rsbin/rsc/v3/rsc-linux-amd64.tgz | tar -zxf - -O rsc/rsc > rsc
 	chmod +x ./rsc
 else
