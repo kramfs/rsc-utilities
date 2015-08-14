@@ -23,9 +23,9 @@ else
 fi
 
 echo "copying rsc to /usr/local/bin"
-cp rsc /usr/local/bin
+mv rsc /usr/local/bin
 
-echo "rsc binary location is `which rsc`"
-rsc --version
+#echo "rsc binary location is `which rsc`"
+#rsc --version
 echo "Done..."
 
