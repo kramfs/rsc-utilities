@@ -18,7 +18,7 @@ if [ ${OS} == 'Linux' ]; then
 else
   # Assume it's a MAC
   echo "Downloading MAC/Darwin binary.."
-  curl https://binaries.rightscale.com/rsbin/rsc/v3/rsc-darwin-amd64.tgz | tar -zxf - -O rsc/rsc > rsc
+  curl https://binaries.rightscale.com/rsbin/rsc/v4/rsc-darwin-amd64.tgz | tar -zxf - -O rsc/rsc > rsc
   chmod +x ./rsc
 fi
 
