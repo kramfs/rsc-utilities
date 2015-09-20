@@ -13,7 +13,7 @@ if [ ${OS} == 'Linux' ]; then
 	echo ""
 	# uncomment to use master branch
 	curl https://binaries.rightscale.com/rsbin/rsc/master/rsc-linux-amd64.tgz | tar -zxf - -O rsc/rsc > rsc
-	#curl https://binaries.rightscale.com/rsbin/rsc/v3/rsc-linux-amd64.tgz | tar -zxf - -O rsc/rsc > rsc
+	#curl https://binaries.rightscale.com/rsbin/rsc/v4/rsc-linux-amd64.tgz | tar -zxf - -O rsc/rsc > rsc
 	chmod +x ./rsc
 else
   # Assume it's a MAC
