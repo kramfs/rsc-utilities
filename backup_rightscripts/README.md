@@ -1,5 +1,5 @@
 # Backup Rightscript
-Download all Rightscripts in a Rightscale account
+Download and make a backup of all Rightscripts in a Rightscale account
 
 Requirements
 -------------
@@ -8,3 +8,8 @@ Requirements
 - REFRESHTOKEN or 
 - EMAIL
 - PASSWORD
+- [RightScale API client](https://github.com/kramfs/rsc-utilities)
+
+# Usage
+
+See https://github.com/kramfs/rsc-utilities
