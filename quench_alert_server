@@ -1,0 +1,34 @@
+#!/bin/bash 
+
+[ ! $1 ] && { echo "Usage: $0 1234 PHP_APP_server 1"; exit 1; }
+[ ! $2 ] && { echo "Usage: $0 1234 PHP_APP_server 1"; exit 1; }
+[ ! $3 ] && { echo "Usage: $0 1234 PHP_APP_server 1"; exit 1; }
+echo " "
+
+#[ $3 -eq 0 ] && { echo "Usage: $0 1234 PHP_APP_server 1"; exit 1; }
+
+ACCOUNT=$1
+SERVER_NAME=$2
+
+QUENCH_DURATION=$(($3 * 60 * 60))
+
+#-HOURS-to-SECONDS
+#1h = 3600
+#3h = 10800
+#6h = 21600
+#8h = 28800
+#12h = 43200
+#24h = 86400
+#48h = 172800
+
+
+SERVER_ALERT_HREF=$(rsc --pp -a $ACCOUNT --xm=':has(.rel:val("alerts")) > .href' cm15 index servers filter[]="name==$SERVER_NAME" |sed -e s/\"//g)
+
+for i in $SERVER_ALERT_HREF
+do
+  TRIGGERED_ALERTS=$(rsc --pp -a $ACCOUNT --xm=':has(.rel:val("self")) > .href' cm15 index $i filter[]=status==triggered |sed -e s/\"//g)
+  for i in $TRIGGERED_ALERTS
+  do
+    rsc --pp --dump=debug -a $ACCOUNT cm15 quench $i duration=$QUENCH_DURATION
+  done
+done 
