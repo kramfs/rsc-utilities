@@ -1,4 +1,6 @@
 #!/bin/bash 
+# Author: Rudel Saldivar
+# Description: Quench all the triggered alerts for a server with the provided duration, in hours.
 
 [ ! $1 ] && { echo "Usage: $0 1234 PHP_APP_server 1"; exit 1; }
 [ ! $2 ] && { echo "Usage: $0 1234 PHP_APP_server 1"; exit 1; }

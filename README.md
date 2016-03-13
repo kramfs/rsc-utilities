@@ -1,7 +1,7 @@
 RSC Utilities
 ===================
 
-Download/Backup all RightScripts from a RightScale account
+Utilities that can be used to interact with RightScale API using RSC, the RightScale API client
 
 Clone
 -------------
@@ -42,8 +42,3 @@ You need to adjust the script accordingly. It will use the email/password creden
 Run the backup script
 -------------
 `./backup_rightscripts.sh`
-
-TODO
--------------
-
- - Save script to per account folder
