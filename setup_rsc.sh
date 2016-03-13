@@ -1,6 +1,6 @@
 #!/bin/bash -e
-# Grab the rsc binary in https://github.com/rightscale/rsc and copy to /usr/local/bin
-# By: Rudel Saldivar
+# Author: Rudel Saldivar
+# Description: Grab the rsc binary in https://github.com/rightscale/rsc and copy to /usr/local/bin
 
 if [ "$(id -u)" != "0" ]; then
    echo "This script must be run as root or use sudo ./setup_rsc.sh"
