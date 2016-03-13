@@ -12,13 +12,13 @@ if [ ${OS} == 'Linux' ]; then
 	echo "Linux OS detected, downloading linux binary.."
 	echo ""
 	# uncomment to use master branch
-	curl https://binaries.rightscale.com/rsbin/rsc/master/rsc-linux-amd64.tgz | tar -zxf - -O rsc/rsc > rsc
-	#curl https://binaries.rightscale.com/rsbin/rsc/v4/rsc-linux-amd64.tgz | tar -zxf - -O rsc/rsc > rsc
+	#curl https://binaries.rightscale.com/rsbin/rsc/master/rsc-linux-amd64.tgz | tar -zxf - -O rsc/rsc > rsc
+	curl https://binaries.rightscale.com/rsbin/rsc/v5/rsc-linux-amd64.tgz | tar -zxf - -O rsc/rsc > rsc
 	chmod +x ./rsc
 else
   # Assume it's a MAC
   echo "Downloading MAC/Darwin binary.."
-  curl https://binaries.rightscale.com/rsbin/rsc/v4/rsc-darwin-amd64.tgz | tar -zxf - -O rsc/rsc > rsc
+  curl https://binaries.rightscale.com/rsbin/rsc/v5/rsc-darwin-amd64.tgz | tar -zxf - -O rsc/rsc > rsc
   chmod +x ./rsc
 fi
 
@@ -26,6 +26,6 @@ echo "copying rsc to /usr/local/bin"
 mv rsc /usr/local/bin
 
 #echo "rsc binary location is `which rsc`"
-#rsc --version
+/usr/local/bin/rsc --version
 echo "Done..."
 
