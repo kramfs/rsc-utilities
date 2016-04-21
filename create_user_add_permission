@@ -1,0 +1,20 @@
+#!/bin/bash -e
+
+# Inputs
+ACCOUNT_ID=
+COMPANY=
+EMAIL=
+FIRST_NAME=
+LAST_NAME=
+PASSWORD=
+PHONE=
+
+# Get user_id href
+USER_HREF=$(rsc --pp --xh=Location -a "$ACCOUNT_ID" cm15 create /api/users user[company]="$COMPANY" user[email]="$EMAIL" user[first_name]="$FIRST_NAME" user[last_name]="$LAST_NAME" user[password]="$PASSWORD" user[phone]="$PHONE")
+
+# Add permissions
+for i in observer admin actor publisher designer server_login library security_manager server_superuser 
+do
+  echo "adding $i permission.."
+  rsc --pp --xh=Location -a "$ACCOUNT_ID" cm15 create /api/permissions permission[role_title]="$i" permission[user_href]="$USER_HREF"
+done
