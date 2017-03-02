@@ -1,6 +1,6 @@
 #!/bin/bash -e
 # Author: Rudel Saldivar
-# Description: Grab the rsc binary in https://github.com/rightscale/right_st and copy to /usr/local/bin
+# Description: Grab the right_st binary in https://github.com/rightscale/right_st and copy to /usr/local/bin
 
 if [ "$(id -u)" != "0" ]; then
    echo "This script must be run as root or use sudo ./setup_right_st.sh"
