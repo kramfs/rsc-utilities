@@ -11,7 +11,7 @@ Setup the environment
 -------------
 `cd rsc-utilities`
 
-`chmod +x setup_rsc.sh`
-
 `sudo ./setup_rsc.sh`
+
+`sudo ./setup_right_st.sh`
 
